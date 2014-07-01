@@ -1,0 +1,8 @@
+PROD_NAME,IMG_URL,ORIGINAL_PRICE,FINAL_PRICE,CURR_IND,CART_IND,FAV_IND,GIFT_IND,DETAIL_LINK_IND
+Motorola 156 MX-VL,laptop.gif,450,280,USD,1,1,1,1
+Iphone Apple,p4.gif,680,390,USD,1,1,1,1
+Samsung Webcam,p5.gif,890,500,EUR,1,1,1,1
+Motorola 156 MX-VL,laptop.gif,800,280,USD,0,1,1,1
+Iphone Apple,p4.gif,457,390,USD,1,0,1,1
+Samsung Webcam,p5.gif,336,500,EUR,1,1,0,1
+Iphone Apple,p4.gif,457,390,USD,1,0,1,0
