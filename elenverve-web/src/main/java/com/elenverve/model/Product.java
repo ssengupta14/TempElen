@@ -1,6 +1,10 @@
 package com.elenverve.model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Product {
+	private static Map<String,String> currencies = new HashMap<String,String>();
 	private String name;
 	private String imgUrl;
 	private int originalPrice;
@@ -10,6 +14,24 @@ public class Product {
 	private int favInd;
 	private int giftInd;
 	private int detailLinkInd;
+	private int imageSizeType;
+	private int isNew;
+	static{
+		currencies.put("USD", "$");
+		currencies.put("EURO", "€");
+	}
+	public int getIsNew() {
+		return isNew;
+	}
+	public void setIsNew(int isNew) {
+		this.isNew = isNew;
+	}
+	public int getImageSizeType() {
+		return imageSizeType;
+	}
+	public void setImageSizeType(int imageSizeType) {
+		this.imageSizeType = imageSizeType;
+	}
 	public String getName() {
 		return name;
 	}
@@ -17,7 +39,8 @@ public class Product {
 		this.name = name;
 	}
 	public String getImgUrl() {
-		return "/resources/images/"+imgUrl;
+		return "/products/"+imgUrl;
+		//return imgUrl;
 	}
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;

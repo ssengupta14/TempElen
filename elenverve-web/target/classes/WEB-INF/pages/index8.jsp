@@ -379,7 +379,7 @@
 					
 					<!-- <img src="http://placehold.it/1366x533"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" /> -->
 					<img src="<%=request.getContextPath() %>/resources/images/slide1.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
-																																																								
+					<!-- 																																																		
 					<div class="tp-caption lfl" data-x="-20" data-y="12" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="<%=request.getContextPath() %>/resources/images/boy.png" alt="" /></span></div>
 
 					<div class="tp-caption lfr" data-x="290" data-y="12" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img  style="z-index:0;" src="<%=request.getContextPath() %>/resources/images/girl1.png" alt="" /></span></div>
@@ -399,11 +399,13 @@
 					<div class="tp-caption skewfromright" data-x="670" data-y="290" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index:8;"><p class="slide4-text3">Sed eget tellus sapien. Proinupmoso etiamgo velmis dolor amet pPro-<br/>inupmoso  etiamgo velmis dolor amet promo elit.</p></div>
 
 					<div class="tp-caption skewfromright" data-x="670" data-y="360" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><a href="#" title="" class="slide2-btn">Purchase on Themeforest</a></div>
+					-->
 				</li><!-- SLIDE 1  -->
 
 				<li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="500" >
 					<!--  <img src="http://placehold.it/1366x533"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" /> -->
 					<img src="<%=request.getContextPath() %>/resources/images/slide2.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+					<!-- 
 					<div class="tp-caption skewfromleft" data-x="292" data-y="196" data-speed="1500" data-start="800" data-easing="SlowMo.ease" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span class="slide-text1">Shop<i>inn</i></span></div>
 
 					<div class="tp-caption skewfromright" data-x="158" data-y="244" data-speed="1500" data-start="800" data-easing="Sine.easeInOut" data-endspeed="500" data-captionhidden="on" style="font-size:30px; z-index: 4"><span class="slide-text1">More then branding <i>agency</i></span></div>
@@ -413,13 +415,13 @@
 					<div class="tp-caption sfr" data-x="314" data-y="326" data-speed="1000" data-start="800" data-easing="easeInBounce" data-endspeed="500" data-captionhidden="on" style="font-size:14px; z-index: 4"><a class="slide-text1-btn" href="#" title="">VIEW MORE</a></div>
 
 					<div class="tp-caption lfr" data-x="723" data-y="88"  data-speed="1500" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index: 4;"><img src="<%=request.getContextPath() %>/resources/images/slide-hand.png"  alt="" /></div>
-
+					-->
 				</li><!-- SLIDE 2  -->
 
 				<li data-transition="curtain-2" data-slotamount="7" data-masterspeed="500" >
 					<!-- <img src="http://placehold.it/1366x533"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" /> -->
 					<img src="<%=request.getContextPath() %>/resources/images/slide3.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
-					
+					<!-- 
 					<div class="tp-caption skewfromleft" data-x="2" data-y="141" data-speed="2000" data-start="1200" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="z-index: 4"><span><img src="<%=request.getContextPath() %>/resources/images/slide-girl.png"  alt="" /></span></div>
 
 					<div class="tp-caption skewfromright" data-x="650" data-y="162" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4; font-size:40px;"><span class="slide2-text1">SHOPPING</span></div>
@@ -429,13 +431,13 @@
 					<div class="tp-caption skewfromright" data-x="650" data-y="294" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4; font-size:30px;"><span class="slide2-text1">More then branding</span></div>
 
 					<div class="tp-caption skewfromleft " data-x="650" data-y="375" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><a href="#" title="" class="slide2-btn">Purchase on Themeforest</a></div>
-
+					-->
 				</li><!-- SLIDE 3  -->
 
 				<li data-transition="boxslide" data-slotamount="7" data-masterspeed="500" >
 					<!-- <img src="http://placehold.it/1366x533"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" /> -->
 					<img src="<%=request.getContextPath() %>/resources/images/slide4.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" /> 
-
+					<!-- 
 					<div class="tp-caption lfb" data-x="2" data-y="2" data-speed="2000" data-start="800" data-easing="Power0.easeIn" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="<%=request.getContextPath() %>/resources/images/balloons.png"  alt="" /></span></div>
 
 					<div class="tp-caption skewfromleft" data-x="680" data-y="210" data-speed="2000" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><h2 class="slide3-text1"> our most complete <i>WooCommerce</i> theme yet!</h2></div>
@@ -450,7 +452,7 @@
 					</div>
 
 					<div class="tp-caption" data-x="-20" data-y="95" data-speed="500" data-start="800" data-easing="Back.easeOut" data-endspeed="500" data-captionhidden="on" style="font-size:40px; z-index: 4"><span><img src="<%=request.getContextPath() %>/resources/images/slide-mobile.png" alt="" /></span></div>
-
+					-->
 				</li><!-- SLIDE 4  -->
 			</ul>
 		</div>
@@ -748,61 +750,44 @@
 			
 			<div class="col-md-9">
 				<div class="row">
+				<do:forLoop var="i" from ="1" to="3" step="1">
 					<div class="col-md-4 inner-products">
-						<div class="best-seller most-sold">
-							<div class="sold-thumb"><img src="http://placehold.it/248x273" alt=""><a title="" href="single-post.html">VIEW DETAILS</a>
-								<i class="box1"></i>
-								<i class="box2"></i>
-								<i class="box3"></i>
-								<i class="box4"></i>
-							</div>					
-							<h3>BEST KIDS DESIGN 2014</h3>
-							
-							<ul class="tooltip-btn">
-								<li class="cart"><a title="" href="#"><i class="fa fa-heart"></i></a></li>
-								<li class="shop"><a title="" href="#"><i class="fa fa-shopping-cart"></i></a></li>
-							</ul>
-							<a title="" href="#">DETAILS</a>
-							<span><i>$360</i>$460</span>
-						</div>
-						
-						<div class="best-seller most-sold">
-							<div class="sold-thumb"><img src="http://placehold.it/248x409" alt=""><a title="" href="single-post.html">VIEW DETAILS</a>
-								<i class="box1"></i>
-								<i class="box2"></i>
-								<i class="box3"></i>
-								<i class="box4"></i>
-							</div>					
-							<h3>BEST KIDS DESIGN 2014</h3>
-							
-							<ul class="tooltip-btn">
-								<li class="cart"><a title="" href="#"><i class="fa fa-heart"></i></a></li>
-								<li class="shop"><a title="" href="#"><i class="fa fa-shopping-cart"></i></a></li>
-							</ul>
-							<a title="" href="#">DETAILS</a>
-							<h6>NEW</h6>
-							<span><i>$360</i>$460</span>
-						</div>
-						
-						<div class="best-seller most-sold">
-							<div class="sold-thumb"><img src="http://placehold.it/248x273" alt=""><a title="" href="single-post.html">VIEW DETAILS</a>
-								<i class="box1"></i>
-								<i class="box2"></i>
-								<i class="box3"></i>
-								<i class="box4"></i>
-							</div>					
-							<h3>BEST KIDS DESIGN 2014</h3>
-							
-							<ul class="tooltip-btn">
-								<li class="cart"><a title="" href="#"><i class="fa fa-heart"></i></a></li>
-								<li class="shop"><a title="" href="#"><i class="fa fa-shopping-cart"></i></a></li>
-							</ul>
-							<a title="" href="#">DETAILS</a>
-							<span><i>$360</i>$460</span>
-						</div>
-						
-					</div>
 					
+						<c:forEach items="${prodList}" var ="prod"> 
+						<div class="best-seller most-sold">
+							<div class="sold-thumb"><img src="<%=request.getContextPath() %>${prod.imgUrl}" alt="">
+									<c:if test="${prod.detailLinkInd >0}">
+										<a title="" href="single-post.html">VIEW DETAILS</a>
+									</c:if>
+								<i class="box1"></i>
+								<i class="box2"></i>
+								<i class="box3"></i>
+								<i class="box4"></i>
+							</div>					
+							<h3>${prod.name}</h3>
+							
+							<ul class="tooltip-btn">
+								<c:if test="${prod.cartInd >0}"> 
+								<li class="cart"><a title="" href="#"><i class="fa fa-heart"></i></a></li>
+								</c:if>
+								<c:if test="${prod.favInd >0}">
+								<li class="shop"><a title="" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+								</c:if>
+								<c:if test="${prod.giftInd >0}">
+								<li class="shop"><a title="" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+								</c:if>
+								
+							</ul>
+							<a title="" href="#">DETAILS</a>
+							<c:if test="${prod.isNew >0}"> 
+							<h6>NEW</h6>
+							</c:if>
+							<span><i>${prod.currInd}${prod.originalPrice}</i>${prod.currInd}${prod.finalPrice}</span>
+						</div>
+					 </c:forEach>
+					</div>
+					</do:forLoop>
+					<!-- 
 					<div class="col-md-4 inner-products">
 						<div class="best-seller most-sold">
 							<div class="sold-thumb"><img src="http://placehold.it/248x409" alt=""><a title="" href="single-post.html">VIEW DETAILS</a>
@@ -912,7 +897,10 @@
 						</div>
 						
 					</div>
+					-->
 				</div>
+				<!-- This is pagination  -->
+				
 					<div class="custom-pagination">
 						<ul>
 							<li><a href="#" title="">1</a></li>

@@ -44,6 +44,8 @@ public class ProductParser {
 				product.setFavInd(Integer.parseInt(values[6]));
 				product.setGiftInd(Integer.parseInt(values[7]));
 				product.setDetailLinkInd(Integer.parseInt(values[8]));
+				product.setIsNew(Integer.parseInt(values[9]));
+				product.setImageSizeType(Integer.parseInt(values[10]));
 				products.add(product);
 			}
 	 

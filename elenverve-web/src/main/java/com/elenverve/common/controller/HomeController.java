@@ -40,12 +40,15 @@ public class HomeController {
 */
 	@RequestMapping(value={ "/", "/welcome**" }, method = RequestMethod.GET)
 	public String index(ModelMap model,HttpServletRequest request) {
+		
 		return "index";
  
 	}
 	@RequestMapping(value={ "/home8", "/welcome**" }, method = RequestMethod.GET)
 	public String index2(ModelMap model,HttpServletRequest request) {
-		
+		ProductParser parser = new ProductParser();
+		List<Product> prodList = parser.getProductList();		
+		model.addAttribute("prodList", prodList);
 		return "index8";
  
 	}
