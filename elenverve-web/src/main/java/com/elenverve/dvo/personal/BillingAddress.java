@@ -1,4 +1,4 @@
-package com.elenverve.dao.personal;
+package com.elenverve.dvo.personal;
 
 public class BillingAddress extends Address {
 

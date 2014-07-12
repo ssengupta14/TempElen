@@ -2,7 +2,7 @@ package com.elenverve.util;
 
 import java.util.List;
 
-import com.elenverve.dao.promotions.Offer;
+import com.elenverve.dvo.promotions.Offer;
 
 public class ConversionPolicyUtil {
 

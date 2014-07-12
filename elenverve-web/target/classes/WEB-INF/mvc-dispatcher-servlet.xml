@@ -23,7 +23,8 @@
 	</bean>
 
 	<mvc:resources mapping="/resources/**" location="/resources/theme/" />
-	<mvc:resources mapping="/static/**" location="/static/" /> 
+	<mvc:resources mapping="/static/**" location="/static/" />
+	<mvc:resources mapping="/products/**" location="/resources/theme/images/products/" /> 
 	<mvc:annotation-driven />
 	
 </beans>

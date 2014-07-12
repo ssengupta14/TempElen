@@ -2,7 +2,7 @@ package com.elenverve.util;
 
 import java.util.List;
 
-import com.elenverve.dao.promotions.GiftCard;
+import com.elenverve.dvo.promotions.GiftCard;
 
 public class GiftCardUtil {
 	public static double redeemGiftCardAmount(List<GiftCard> giftCards){

@@ -1,4 +1,4 @@
-package com.elenverve.dao.personal;
+package com.elenverve.dvo.personal;
 
 public abstract class Address{
 	public static int SHIPPING=0;
