@@ -1,7 +1,0 @@
-
-Reset root password			mysqld --init-file=C:\\Ashwini\\ElenVerve\\webproject\\TempElen\\SQL\\resetRootPass.txt
-connect mysql				mysql -u root -p	
-db changed					used mysql
-INSERT INTO user (host, user, password, select_priv, insert_priv, update_priv) VALUES ('localhost', 'guest', PASSWORD('guest'), 'Y', 'Y', 'Y');
-
-CREATE DATABASE ev;
