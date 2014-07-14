@@ -1,8 +1,12 @@
 package com.elenverve.dvo.personal;
 
 public abstract class Address{
+	
 	public static int SHIPPING=0;
 	public static int BILLING=1;
+	public static int Res=3;
+	public static int Offi=4;
+	
 	private String comments;
 	private int addressType;
 	private String streetNo;

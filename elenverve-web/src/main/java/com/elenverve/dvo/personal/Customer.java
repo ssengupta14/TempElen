@@ -1,61 +1,30 @@
 package com.elenverve.dvo.personal;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Customer {
-	private long customerId;
-	private long accountId;
-	private String firstName;
-	private String lastName;
-	private int gender;
-	private ContactDetails contacts;
-	private Credentials credentials;
+	
 	private FraudCheck fraudCheck;
-	public long getCustomerId() {
-		return customerId;
-	}
-	public void setCustomerId(long customerId) {
-		this.customerId = customerId;
-	}
-	public long getAccountId() {
-		return accountId;
-	}
-	public void setAccountId(long accountId) {
-		this.accountId = accountId;
-	}
-	public String getFirstName() {
-		return firstName;
-	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	public int getGender() {
-		return gender;
-	}
-	public void setGender(int gender) {
-		this.gender = gender;
-	}
-	public ContactDetails getContacts() {
-		return contacts;
-	}
-	public void setContacts(ContactDetails contacts) {
-		this.contacts = contacts;
-	}
-	public Credentials getCredentials() {
-		return credentials;
-	}
-	public void setCredentials(Credentials credentials) {
-		this.credentials = credentials;
-	}
+	private List<ShippingAddress> shipingAddresses = new ArrayList<ShippingAddress>();
+	private BillingAddress billingAddress;
+	
 	public FraudCheck getFraudCheck() {
 		return fraudCheck;
 	}
 	public void setFraudCheck(FraudCheck fraudCheck) {
 		this.fraudCheck = fraudCheck;
 	}
-
+	public List<ShippingAddress> getShipingAddresses() {
+		return shipingAddresses;
+	}
+	public void addShipingAddress(ShippingAddress shipingAddress) {		
+		this.shipingAddresses.add(shipingAddress);
+	}
+	public BillingAddress getBillingAddress() {
+		return billingAddress;
+	}
+	public void setBillingAddress(BillingAddress billingAddress) {
+		this.billingAddress = billingAddress;
+	}
 }
