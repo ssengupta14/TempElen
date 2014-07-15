@@ -19,6 +19,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: black;
 }
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
@@ -197,12 +198,14 @@
 }
 .fa-search:before {
   content: "\f002";
+  color:#f0b70c;
 }
 .fa-envelope-o:before {
   content: "\f003";
 }
 .fa-heart:before {
   content: "\f004";
+  color:#f0b70c;
 }
 .fa-star:before {
   content: "\f005";
@@ -295,6 +298,7 @@
 }
 .fa-headphones:before {
   content: "\f025";
+  font-size: 17px;
 }
 .fa-volume-off:before {
   content: "\f026";
@@ -331,6 +335,7 @@
 }
 .fa-font:before {
   content: "\f031";
+  color:#f0b70c;
 }
 .fa-bold:before {
   content: "\f032";
@@ -524,6 +529,7 @@
 }
 .fa-random:before {
   content: "\f074";
+  color:#f0b70c;
 }
 .fa-comment:before {
   content: "\f075";
@@ -542,6 +548,7 @@
 }
 .fa-shopping-cart:before {
   content: "\f07a";
+  color:#f0b70c;
 }
 .fa-folder:before {
   content: "\f07b";
@@ -929,6 +936,8 @@
 .fa-mobile-phone:before,
 .fa-mobile:before {
   content: "\f10b";
+  color:#f0b70c;
+  font-size: 20px;
 }
 .fa-circle-o:before {
   content: "\f10c";

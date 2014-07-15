@@ -197,12 +197,14 @@
 }
 .fa-search:before {
   content: "\f002";
+  color:#f0b70c;
 }
 .fa-envelope-o:before {
   content: "\f003";
 }
 .fa-heart:before {
   content: "\f004";
+ /* color:#f0b70c; */
 }
 .fa-star:before {
   content: "\f005";
@@ -212,6 +214,7 @@
 }
 .fa-user:before {
   content: "\f007";
+  font-size: 14px;
 }
 .fa-film:before {
   content: "\f008";
@@ -295,6 +298,7 @@
 }
 .fa-headphones:before {
   content: "\f025";
+  color:#f0b70c;
 }
 .fa-volume-off:before {
   content: "\f026";
@@ -331,6 +335,7 @@
 }
 .fa-font:before {
   content: "\f031";
+  /*color:#f0b70c;*/
 }
 .fa-bold:before {
   content: "\f032";
@@ -524,6 +529,7 @@
 }
 .fa-random:before {
   content: "\f074";
+  /*color:#f0b70c;*/
 }
 .fa-comment:before {
   content: "\f075";
@@ -542,6 +548,8 @@
 }
 .fa-shopping-cart:before {
   content: "\f07a";
+  color:#f0b70c;
+  
 }
 .fa-folder:before {
   content: "\f07b";
