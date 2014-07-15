@@ -3,7 +3,8 @@ package com.elenverve.dvo.personal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Customer {
+public class Customer extends User{
+	
 	
 	private FraudCheck fraudCheck;
 	private List<ShippingAddress> shipingAddresses = new ArrayList<ShippingAddress>();

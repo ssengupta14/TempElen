@@ -3,7 +3,7 @@ package com.elenverve.dvo.personal;
 
 public abstract class User {
 	
-	private long customerId;
+	private long id;
 	private long accountId;
 	private String firstName;
 	private String lastName;
@@ -14,11 +14,11 @@ public abstract class User {
 	
 	private Credentials credentials;
 	
-	public long getCustomerId() {
-		return customerId;
+	public long getId() {
+		return id;
 	}
-	public void setCustomerId(long customerId) {
-		this.customerId = customerId;
+	public void setId(long id) {
+		this.id = id;
 	}
 	public long getAccountId() {
 		return accountId;
