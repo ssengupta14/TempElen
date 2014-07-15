@@ -119,6 +119,17 @@
 			<!--  This is the menu  -->
 			<div class="menu">
 				<ul>
+					<!--
+					<c:forEach items="${homedpo.menus}" var ="menus">
+						<li><a href="#" title="">${menus.displayName}</a>
+							<ul>
+								<c:forEach items="${menus.subMenu}" var ="subMenus">
+									<li><a href="${subMenus.href}" title="">${subMenus.displayName}</a></li>
+								</c:forEach>
+							</ul>
+						</li>
+					</c:forEach>
+					-->
 					<li><a href="#" title="">Home</a>
 						<ul>
 							<li><a href="index.html" title="">Home Page 1</a></li>
@@ -302,6 +313,17 @@
 		<div class="responsive-menu">
 				<a class="menu-dropdown-btn" title="">MENU <i class="fa fa-align-justify"></i></a>
 			<ul>
+				<!--
+				<c:forEach items="${homedpo.menus}" var ="menus">
+					<li><a href="#" title="">${menus.displayName}</a>
+						<ul>
+							<c:forEach items="${menus.subMenu}" var ="subMenus">
+								<li><a href="${subMenus.href}" title="">${subMenus.displayName}</a></li>
+							</c:forEach>
+						</ul>
+					</li>
+				</c:forEach>
+				-->
 				<li><a href="#" title="">Home</a>
 					<ul>
 						<li><a href="index.html" title="">Home Page 1</a></li>
