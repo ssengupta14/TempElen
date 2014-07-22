@@ -1,12 +1,14 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="<c:url value="/resources/theme/webimages/favicon.ico"/>"	type="text/css" />
 <title>Index</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-
+</head>
 
 <link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Raleway:400,300,600,700,500|Noto+Sans:400,700|Ubuntu:300,400,500,700'
