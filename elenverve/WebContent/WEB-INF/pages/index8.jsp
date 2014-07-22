@@ -1,30 +1,31 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Index</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
 
-<title>Popup Login and Register</title>
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Raleway:400,300,600,700,500|Noto+Sans:400,700|Ubuntu:300,400,500,700'
+
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Raleway:400,300,600,700,500|Noto+Sans:400,700|Ubuntu:300,400,500,700'
 	rel='stylesheet' type='text/css'>
 
 
 <!-- Styles -->
 
-<link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css"/>"	type="text/css" />
+<link rel="stylesheet"	href="<c:url value="/resources/css/bootstrap.min.css"/>" 	type="text/css" />
 <!-- Bootstrap -->
 <link rel="stylesheet"	href="<c:url value="/resources/font-awesome-4.0.3/css/font-awesome.css"/>"	type="text/css" />
 <!-- Font Awesome -->
-<link rel="stylesheet"	href="<c:url value="/resources/css/owl.carousel.css"/>" type="text/css" />
-<!-- Owl Carousal -->
-<link rel="stylesheet"	href="<c:url value="/resources/css/animate.css"/>" type="text/css" />
-<!-- Animation -->
-<link rel="stylesheet"	href="<c:url value="/resources/css/ion.rangeSlider.css"/>" />
-<!-- Range Slider -->
-<link rel="stylesheet"	href="<c:url value="/resources/css/ion.rangeSlider.skinFlat.css"/>" />
-<!-- Range Slider -->
+<link rel="stylesheet"	href="<c:url value="/resources/css/owl.carousel.css"/>" type="text/css" /><!-- Owl Carousal -->
+<link rel="stylesheet"	href="<c:url value="/resources/css/animate.css"/>" type="text/css" /><!-- Animation -->
+
+<link rel="stylesheet"	href="<c:url value="/resources/css/ion.rangeSlider.css"/>" /><!-- Range Slider -->
+<link rel="stylesheet"	href="<c:url value="/resources/css/ion.rangeSlider.skinFlat.css"/>" /><!-- Range Slider -->
+
+<link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>"	type="text/css" />
 <!-- Style -->
 <link rel="stylesheet"	href="<c:url value="/resources/css/revolution.css"/>" media="screen" />
 <!-- Style -->
@@ -35,27 +36,32 @@
 <link rel="stylesheet" type="text/css"	href="<c:url value="/resources/css/setting.css"/>" media="screen" />
 <link rel="stylesheet" type="text/css"	href="<c:url value="/resources/css/mystyle.css"/>" media="screen" />
 
+<%-- <script type="text/javascript"	src="<c:url value="/resources/js/jquery-1.10.2.js"/>"></script> --%>
+<script type="text/javascript" src="<c:url value="/resources/js/jquery-1.11.0.min.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/jquery.leanModal.min.js"/>"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
 <!-- Jquery -->
 
+</head>
 <body>
 	<div class="theme-layout">
 
 		<header class="header2">
 			<div class="container">
 				<div class="top-bar">
-
-					<ul class="language bar-dropdown">
-						<li><a href="#" title=""><i class="fa fa-user"></i></a>
-							<ul>
-								<li><a href="#" title="">Profile</a></li>
-								<li><a href="#" title="">Help</a></li>
-								<li><a href="#" title="">Privacy</a></li>
-								<li><a href="#" title="">Logout</a></li>
-							</ul></li>
+				
+				<ul class="language bar-dropdown">
+					<li><a href="#" title=""><i class="fa fa-user"></i></a>
+						<ul>
+							<li><a href="#" title="">Profile</a></li>
+							<li><a href="#" title="">Help</a></li>
+							<li><a href="#" title="">Privacy</a></li>
+							<li><a href="#" title="">Logout</a></li>
+						</ul></li>
 					</ul>
 
 					<!-- What ever person has shopped, is displayed in the shopping cart-->
-
+					
 
 					<ul class="shop-cart bar-dropdown">
 						<li><a href="#" title=""><i class="fa fa-shopping-cart"></i></a>
@@ -116,10 +122,9 @@
 					<!--  end of wishlist button -->
 					<!--  Support Phone number  -->
 					<ul class="whishlist-bar bar-dropdown">
-						<li><a href="#" title=""><i class="fa fa-phone"></i>&nbsp;&nbsp;24/7
-								Support: 123-456-7890</a></li>
+						<li><a href="#" title=""><i class="fa fa-phone"></i>&nbsp;&nbsp;24/7 Support: 123-456-7890</a></li>
 					</ul>
-
+										
 				</div>
 			</div>
 			<nav>
@@ -243,9 +248,24 @@
 					<li><a href="about.html" title="">About </a></li>
 					<li><a href="contact.html" title="">Contact</a></li>
 					-->
-
 							<li>
-								<!-- <div class="container"> -->
+								<!-- <a href="#" id="loginform">Login | Register</a>
+								<div class="login">
+									<div class="arrow-up"></div>
+									<div class="formholder">
+										<div class="randompad">
+											<fieldset>
+												<label type="label" name="email">Email</label> <input
+													type="email" value="example@example.com" /> <label
+													type="label" name="password">Password</label> <input
+													type="password" /> <input type="submit" value="Login" />
+
+											</fieldset>
+										</div>
+									</div>
+								</div> -->
+								
+								
 									<a id="modal_trigger" href="#modal" >Login|register</a>
 
 									<div id="modal" class="popupContainer" style="display: none;">
@@ -334,7 +354,7 @@
 											</div>
 										</section>
 									</div>
-								<!-- </div> -->
+								
 							</li>
 
 
@@ -750,12 +770,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="heading1">
-							<h2>
-								<i>EVERYDAY </i>DEALS
-							</h2>
-							<span>BRAND FOR EVERY STYLE.</span>
-						</div>
+					<div class="heading1">
+						<h2><i>EVERYDAY </i>DEALS</h2>
+						<span>BRAND FOR EVERY STYLE.</span>
+					</div>
 						<div class="discount-deal">
 							<Div class="discount-desc">
 								<h3>ENDING SOON</h3>
@@ -778,280 +796,245 @@
 
 							<div class="discount-image">
 								<!--<img src="http://placehold.it/270x280" alt="" />-->
-								<img
-									src="<%=request.getContextPath()%>/resources/images/discount.jpg"
-									alt="" /> <span class="flip-default">WE GIVE YOU BEST
-									HOSTING </span> <A href="#" title=""><span class="flip-active">SHOP
-										NOW</span></a>
+								<img src="<%=request.getContextPath()%>/resources/images/discount.jpg" alt="" />
+								<span class="flip-default">WE GIVE YOU BEST HOSTING </span> <A
+									href="#" title=""><span class="flip-active">SHOP NOW</span></a>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-md-6">
-						<div class="deal-week-sec">
-							<div class="heading1">
-								<h2>
-									<i>DEAL OF THE </i>WEEK
-								</h2>
-								<span>BRAND FOR EVERY STYLE.</span>
-							</div>
-
-							<div class="deal-week">
-								<!-- <img src="http://placehold.it/599x290" alt="" /> -->
-								<img
-									src="<%=request.getContextPath()%>/resources/images/deal-week.jpg"
-									alt="" />
-								<h2>
-									BUY OFER EVERY OFFER YOU GET <span><i>UP TO</i>25%<i
-										id="discount">DISCOUNT</i></span>
-								</h2>
-							</div>
-
-							<div class="deal-of-weak">
-								<!--<p>The other week I picked up a pillow as a complete impulse buy. It was bright and into colorful and only five dollars</p> -->
-								<a href="#" title=""><i class="fa fa-shopping-cart"></i>Purchase
-									From Here</a>
-							</div>
-
-						</div>
-					</div>
+									<div class="deal-week-sec">
+										<div class="heading1">
+											<h2><i>DEAL OF THE </i>WEEK</h2>
+											<span>BRAND FOR EVERY STYLE.</span>
+										</div>
+										
+										<div class="deal-week">
+											<!-- <img src="http://placehold.it/599x290" alt="" /> -->
+											<img src="<%=request.getContextPath()%>/resources/images/deal-week.jpg" alt="" />
+											<h2>BUY OFER EVERY OFFER YOU GET <span><i>UP TO</i>25%<i id="discount">DISCOUNT</i></span> </h2>
+										</div>
+										
+										<div class="deal-of-weak">
+											<!--<p>The other week I picked up a pillow as a complete impulse buy. It was bright and into colorful and only five dollars</p> -->
+											<a href="#" title="" ><i class="fa fa-shopping-cart"></i>Purchase From Here</a>
+										</div>
+										
+									</div>
+			</div>
 
 				</div>
 			</div>
 		</section>
-
-		<section class="block remove-gap">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="heading1">
-							<h2>
-								<i>IN STORE </i>NOW
-							</h2>
-							<span>BRAND FOR EVERY STYLE.</span>
-						</div>
-						<Div class="row">
-							<div class="col-md-6">
-								<div class="best-seller most-sold">
-									<div class="sold-thumb">
-										<img src="<c:url value="/resources/images/up-coming9.jpg"/>"
-											alt="" />
-										<!-- <img alt="" src="http://placehold.it/248x273"> -->
-										<a href="single-post.html" title="">VIEW DETAILS</a> <i
-											class="box1"></i> <i class="box2"></i> <i class="box3"></i> <i
-											class="box4"></i>
-									</div>
-									<h3>BEST KIDS DESIGN 2014</h3>
-
-									<ul class="tooltip-btn">
-										<li class="cart"><a href="#" title=""><i
-												class="fa fa-heart"></i></a></li>
-										<li class="shop"><a href="#" title=""><i
-												class="fa fa-shopping-cart"></i></a></li>
-									</ul>
-									<a href="#" title="">DETAILS</a> <span><i>$360</i>$460</span>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="best-seller most-sold">
-									<div class="sold-thumb">
-										<img src="<c:url value="/resources/images/up-coming10.jpg"/>"
-											alt="" />
-										<!--<img alt="" src="http://placehold.it/248x273">-->
-										<a href="single-post.html" title="">VIEW DETAILS</a> <i
-											class="box1"></i> <i class="box2"></i> <i class="box3"></i> <i
-											class="box4"></i>
-									</div>
-									<h3>BEST KIDS DESIGN 2014</h3>
-
-									<ul class="tooltip-btn">
-										<li class="cart"><a href="#" title=""><i
-												class="fa fa-heart"></i></a></li>
-										<li class="shop"><a href="#" title=""><i
-												class="fa fa-shopping-cart"></i></a></li>
-									</ul>
-									<a href="#" title="">DETAILS</a> <span><i>$360</i>$460</span>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-					<div class="shop-tabs">
-
-						<div class="col-md-6">
-							<div class="heading1">
-								<h2>
-									<i>SOCIAL </i>REVIEWS
-								</h2>
-								<span>BRAND FOR EVERY STYLE.</span>
-							</div>
-							<ul class="nav nav-tabs shop-tab" id="myTab">
-								<li class="active"><a data-toggle="tab" href="#tab-photos">Most
-										Popular</a></li>
-								<li class=""><a data-toggle="tab" href="#tab-photos">Most
-										Liked</a></li>
-								<li class=""><a data-toggle="tab" href="#reviews">Top
-										Reviews</a></li>
-
-							</ul>
-							<div class="tab-content" id="myTabContent">
-								<div id="tab-photos" class="tab-pane fade active in">
-									<div class="tab-photos">
-										<div class="tab-photo-sec">
-											<div class="tab-photo">
-												<!--<img src="http://placehold.it/527x281" alt="" /> -->
-												<img src="<c:url value="/resources/images/tab-photo1.jpg"/>"
-													alt="" /> <span>Lv 33/2 Cunningham street</span>
-											</div>
-											<div class="tab-photo-des">
-												<p>Samsung Knox security software is continuously
-													gaining popularity among the corporate businesses. And
-													while the US Department of Defense was considering</p>
-											</div>
-										</div>
-
-										<div class="tab-photo-sec">
-											<div class="tab-photo">
-												<!--<img src="http://placehold.it/527x281" alt="" /> -->
-												<img src="<c:url value="/resources/images/tab-photo2.jpg"/>"
-													alt="" /> <span>Lv 33/2 Cunningham street</span>
-											</div>
-											<div class="tab-photo-des">
-												<p>Samsung Knox security software is continuously
-													gaining popularity among the corporate businesses. And
-													while the US Department of Defense was considering</p>
-											</div>
-										</div>
-
-										<div class="tab-photo-sec">
-											<div class="tab-photo">
-												<img src="<c:url value="/resources/images/tab-photo3.jpg"/>"
-													alt="" />
-												<!-- <img src="http://placehold.it/527x281" alt="" /> -->
-												<span>Lv 33/2 Cunningham street</span>
-											</div>
-											<div class="tab-photo-des">
-												<p>Samsung Knox security software is continuously
-													gaining popularity among the corporate businesses. And
-													while the US Department of Defense was considering</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div id="reviews" class="tab-pane fade">
-									<div class="tab-reveiws">
-										<ul>
-											<li><span> <img
-													src="<c:url value="/resources/images/reviews1.jpg"/>"
-													alt="" /> <!--<img src="http://placehold.it/160x101" alt="" /> -->
-											</span> <a href="#" title="">Consectetur Adipisicing buy this
-													from own </a> <i> Novermber 20,2013</i>
-												<p>It turns out company does indeed have monetary in
-													place with phone makers over Windows Phone. He, ever, calls
-													the quoted dollar amounts.</p></li>
-
-											<li><span> <img
-													src="<c:url value="/resources/images/reviews2.jpg"/>"
-													alt="" /> <!--<img src="http://placehold.it/160x101" alt="" /> -->
-
-											</span> <a href="#" title="">Consectetur Adipisicing buy this
-													from own </a> <i> Novermber 20,2013</i>
-												<p>It turns out company does indeed have monetary in
-													place with phone makers over Windows Phone. He, ever, calls
-													the quoted dollar amounts.</p></li>
-
-											<li><span> <img
-													src="<c:url value="/resources/images/reviews3.jpg"/>"
-													alt="" /> <!--<img src="http://placehold.it/160x101" alt="" /> -->
-											</span> <a href="#" title="">Consectetur Adipisicing buy this
-													from own </a> <i> Novermber 20,2013</i>
-												<p>It turns out company does indeed have monetary in
-													place with phone makers over Windows Phone. He, ever, calls
-													the quoted dollar amounts.</p></li>
-										</ul>
-									</div>
-								</div>
-
-								<div id="video" class="tab-pane fade">
-									<div class="tab-video">
-										<h3>Samsung responds to Knox vulnerability allegations</h3>
-										<iframe src="http://player.vimeo.com/video/8118831"
-											height="281"></iframe>
-										<p>Samsung Knox security software is continuously gaining
-											popularity among the corporate businesses. And while the US
-											Department of Defense was considering</p>
-									</div>
-								</div>
-
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="block">
-			<div class="container">
+		
+<section class="block remove-gap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
 				<div class="heading1">
-					<h2>
-						<i>COLLECTIONS </i>
-					</h2>
-					<span>BRAND FOR EVERY STYLE. FIND YOURS.</span>
+					<h2><i>IN STORE </i>NOW</h2>
+					<span>BRAND FOR EVERY STYLE.</span>
 				</div>
-				<div class="shoping-categories">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="shop-categories-sec">
-								<img
-									src="<%=request.getContextPath()%>/resources/images/recent-products.jpg"
-									alt="" />
-								<!--<img src="http://placehold.it/367x360" alt="" />-->
-								<div class="shop-categories">
-									<h2>ELEMENTS</h2>
-									<a href="#" title="">VIEW ALL</a> <span><i
-										class="fa fa-heart"></i>Great Offer 30% </span> <span><i
-										class="fa fa-th"></i>(300) items</span>
-								</div>
+				<Div class="row">	
+					<div class="col-md-6">
+						<div class="best-seller most-sold">
+							<div class="sold-thumb">
+								<img src="<c:url value="/resources/images/up-coming9.jpg"/>" alt="" />
+								<!-- <img alt="" src="http://placehold.it/248x273"> -->
+								<a href="single-post.html" title="">VIEW DETAILS</a>
+								<i class="box1"></i>
+								<i class="box2"></i>
+								<i class="box3"></i>
+								<i class="box4"></i>
+							</div>					
+							<h3>BEST KIDS DESIGN 2014</h3>
+							
+							<ul class="tooltip-btn">
+								<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+								<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+							</ul>
+							<a href="#" title="">DETAILS</a>
+							<span><i>$360</i>$460</span>
+						</div>
+					</div>
+			
+					<div class="col-md-6">
+						<div class="best-seller most-sold">
+							<div class="sold-thumb">
+								<img src="<c:url value="/resources/images/up-coming10.jpg"/>" alt="" />
+								<!--<img alt="" src="http://placehold.it/248x273">-->
+								<a href="single-post.html" title="">VIEW DETAILS</a>
+								<i class="box1"></i>
+								<i class="box2"></i>
+								<i class="box3"></i>
+								<i class="box4"></i>
+							</div>					
+							<h3>BEST KIDS DESIGN 2014</h3>
+							
+							<ul class="tooltip-btn">
+								<li class="cart"><a href="#" title=""><i class="fa fa-heart"></i></a></li>
+								<li class="shop"><a href="#" title=""><i class="fa fa-shopping-cart"></i></a></li>
+							</ul>
+							<a href="#" title="">DETAILS</a>
+							<span><i>$360</i>$460</span>
+						</div>
+					</div>
+			
+				</div>	
+			</div>
+			
+		<div class="shop-tabs">
+		
+			<div class="col-md-6">
+			<div class="heading1">
+						<h2><i>SOCIAL  </i>REVIEWS</h2>
+						<span>BRAND FOR EVERY STYLE.</span>
+		</div>
+			  <ul class="nav nav-tabs shop-tab" id="myTab">
+				<li class="active"><a data-toggle="tab" href="#tab-photos">Most Popular</a></li>
+				<li class=""><a data-toggle="tab" href="#tab-photos">Most Liked</a></li>
+				<li class=""><a data-toggle="tab" href="#reviews">Top Reviews</a></li>
+				
+			  </ul>
+			  <div class="tab-content" id="myTabContent">
+				<div id="tab-photos" class="tab-pane fade active in">
+					<div class="tab-photos">
+						<div class="tab-photo-sec">
+							<div class="tab-photo">
+								<!--<img src="http://placehold.it/527x281" alt="" /> -->
+								<img src="<c:url value="/resources/images/tab-photo1.jpg"/>" alt="" />
+								<span>Lv 33/2 Cunningham street</span>
+							</div>
+							<div class="tab-photo-des">
+							<p>Samsung Knox security software is continuously gaining popularity among the corporate businesses. And while the US Department of Defense was considering  </p>
 							</div>
 						</div>
-
-						<div class="col-md-4">
-							<div class="shop-categories-sec">
-								<img
-									src="<%=request.getContextPath()%>/resources/images/recent-products2.jpg"
-									alt="" />
-								<!--<img src="http://placehold.it/367x360" alt="" />-->
-								<div class="shop-categories">
-									<h2>CONTINENTS</h2>
-									<a href="#" title="">VIEW ALL</a> <span><i
-										class="fa fa-heart"></i>Great Offer 30% </span> <span><i
-										class="fa fa-th"></i>(300) items</span>
-								</div>
+						
+						<div class="tab-photo-sec">
+							<div class="tab-photo">
+								<!--<img src="http://placehold.it/527x281" alt="" /> -->
+								<img src="<c:url value="/resources/images/tab-photo2.jpg"/>" alt="" />
+								<span>Lv 33/2 Cunningham street</span>
+							</div>
+							<div class="tab-photo-des">
+							<p>Samsung Knox security software is continuously gaining popularity among the corporate businesses. And while the US Department of Defense was considering  </p>
 							</div>
 						</div>
-
-						<div class="col-md-4">
-							<div class="shop-categories-sec">
-								<img
-									src="<%=request.getContextPath()%>/resources/images/recent-products3.jpg"
-									alt="" />
-								<!--<img src="http://placehold.it/367x360" alt="" /> -->
-								<div class="shop-categories">
-									<h2>SPECTRUM</h2>
-									<a href="#" title="">VIEW ALL</a> <span><i
-										class="fa fa-heart"></i>Great Offer 30% </span> <span><i
-										class="fa fa-th"></i>(300) items</span>
-								</div>
+						
+						<div class="tab-photo-sec">
+							<div class="tab-photo">
+								<img src="<c:url value="/resources/images/tab-photo3.jpg"/>" alt="" />
+								<!-- <img src="http://placehold.it/527x281" alt="" /> -->
+								<span>Lv 33/2 Cunningham street</span>
+							</div>
+							<div class="tab-photo-des">
+							<p>Samsung Knox security software is continuously gaining popularity among the corporate businesses. And while the US Department of Defense was considering  </p>
 							</div>
 						</div>
-
 					</div>
 				</div>
+				<div id="reviews" class="tab-pane fade">
+					<div class="tab-reveiws">
+						<ul>
+							<li><span>
+								<img src="<c:url value="/resources/images/reviews1.jpg"/>" alt="" />
+								<!--<img src="http://placehold.it/160x101" alt="" /> -->
+							    </span>
+								<a href="#" title="">Consectetur Adipisicing buy this from own </a>
+								<i> Novermber 20,2013</i>
+								<p> It turns out company does indeed have monetary in place with phone makers over Windows Phone. He, ever, calls the quoted dollar amounts.</p>
+							</li>
+							
+							<li><span>
+								<img src="<c:url value="/resources/images/reviews2.jpg"/>" alt="" />
+								<!--<img src="http://placehold.it/160x101" alt="" /> -->
+								
+							</span>
+								<a href="#" title="">Consectetur Adipisicing buy this from own </a>
+								<i> Novermber 20,2013</i>
+								<p> It turns out company does indeed have monetary in place with phone makers over Windows Phone. He, ever, calls the quoted dollar amounts.</p>
+							</li>
+							
+							<li><span>
+								<img src="<c:url value="/resources/images/reviews3.jpg"/>" alt="" />
+								<!--<img src="http://placehold.it/160x101" alt="" /> -->
+							   </span>
+								<a href="#" title="">Consectetur Adipisicing buy this from own </a>
+								<i> Novermber 20,2013</i>
+								<p> It turns out company does indeed have monetary in place with phone makers over Windows Phone. He, ever, calls the quoted dollar amounts.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="video" class="tab-pane fade">
+					<div class="tab-video">
+						<h3>Samsung responds to Knox vulnerability allegations</h3>
+						<iframe src="http://player.vimeo.com/video/8118831" height="281"></iframe>
+						<p>Samsung Knox security software is continuously gaining popularity among the corporate businesses. And while the US Department of Defense was considering  </p>
+					</div>
+				</div>
+				
+				
+			  </div>
 			</div>
-		</section>
+		</div>
+		</div>
+	</div>
+</section>
+		
+<section class="block">
+	<div class="container">
+		<div class="heading1">
+			<h2><i>COLLECTIONS </i></h2>
+			<span>BRAND FOR EVERY STYLE. FIND YOURS.</span>
+		</div>
+		<div class="shoping-categories">	
+			<div class="row">
+				<div class="col-md-4">
+					<div class="shop-categories-sec">
+					<img src="<%=request.getContextPath()%>/resources/images/recent-products.jpg" alt="" />
+						<!--<img src="http://placehold.it/367x360" alt="" />-->
+						<div class="shop-categories">
+							<h2>ELEMENTS</h2>
+							<a href="#" title="">VIEW ALL</a>
+							<span><i class="fa fa-heart"></i>Great Offer 30% </span>
+							<span><i class="fa fa-th"></i>(300) items</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="shop-categories-sec">
+						<img src="<%=request.getContextPath()%>/resources/images/recent-products2.jpg" alt="" />
+						<!--<img src="http://placehold.it/367x360" alt="" />-->
+						<div class="shop-categories">
+							<h2>CONTINENTS</h2>
+							<a href="#" title="">VIEW ALL</a>
+							<span><i class="fa fa-heart"></i>Great Offer 30% </span>
+							<span><i class="fa fa-th"></i>(300) items</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="shop-categories-sec">
+						<img src="<%=request.getContextPath()%>/resources/images/recent-products3.jpg" alt="" />
+						<!--<img src="http://placehold.it/367x360" alt="" /> -->
+						<div class="shop-categories">
+							<h2>SPECTRUM</h2>
+							<a href="#" title="">VIEW ALL</a>
+							<span><i class="fa fa-heart"></i>Great Offer 30% </span>
+							<span><i class="fa fa-th"></i>(300) items</span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
 
 		<section class="block remove-gap" id="shop-recent-product">
 			<div class="container">
@@ -1067,8 +1050,8 @@
 						<div class="shop-recent-product">
 							<!--<img src="http://placehold.it/368x381" alt="" /> -->
 							<img
-								src="<%=request.getContextPath()%>/resources/images/recent-products.jpg"
-								alt="" /> <span><i>$30</i></span>
+								src="<%=request.getContextPath()%>/resources/images/recent-products.jpg" alt="" /> 
+								<span><i>$30</i></span>
 							<p>HOME DECOR</p>
 							<ul>
 								<li><a href="#" title="">Add To Cart</a></li>
@@ -1167,120 +1150,82 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="heading1">
-							<h2>
-								<i>HAPPY </i>CUSTOMERS
-							</h2>
+							<h2><i>HAPPY </i>CUSTOMERS</h2>
 							<span>BRAND FOR EVERY STYLE.</span>
 						</div>
 						<div id="shop-testimonial">
 							<div class="w-ceo">
-								<img
-									src="<%=request.getContextPath()%>/resources/images/our-ceo1.jpg"
-									alt="" />
+								<img src="<%=request.getContextPath()%>/resources/images/our-ceo1.jpg" 	alt="" />
 								<!--<img alt="" src="http://placehold.it/110x105"> -->
 								<h5>Nick Roach</h5>
-								<p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet
-									consequat rhoncus, lacus dolor sodales diam, aliquet fermentum
-									lectus enim id lacus.</p>
+								<p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus.</p>
 							</div>
 							<div class="w-ceo">
 								<!--<img alt="" src="http://placehold.it/110x105"> -->
-								<img
-									src="<%=request.getContextPath()%>/resources/images/our-ceo2.jpg"
-									alt="" />
+								<img src="<%=request.getContextPath()%>/resources/images/our-ceo2.jpg" 	alt="" />
 								<h5>Nick Roach</h5>
-								<p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet
-									consequat rhoncus, lacus dolor sodales diam, aliquet fermentum
-									lectus enim id lacus.</p>
+								<p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus. </p>
 							</div>
 							<div class="w-ceo">
 								<!--<img alt="" src="http://placehold.it/110x105"> -->
-								<img
-									src="<%=request.getContextPath()%>/resources/images/our-ceo3.jpg"
-									alt="" />
+								<img src="<%=request.getContextPath()%>/resources/images/our-ceo3.jpg" 	alt="" />
 								<h5>Nick Roach</h5>
-								<p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet
-									consequat rhoncus, lacus dolor sodales diam, aliquet fermentum
-									lectus enim id lacus.</p>
+								<p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus. </p>
 							</div>
 							<div class="w-ceo">
-								<img
-									src="<%=request.getContextPath()%>/resources/images/our-ceo1.jpg"
-									alt="" />
+								<img src="<%=request.getContextPath()%>/resources/images/our-ceo1.jpg" 	alt="" />
 								<!--<img alt="" src="http://placehold.it/110x105"> -->
 								<h5>Nick Roach</h5>
-								<p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet
-									consequat rhoncus, lacus dolor sodales diam, aliquet fermentum
-									lectus enim id lacus.</p>
+								<p>Vestibulum vel posuere ante. Etiam viverra, odio sit amet consequat rhoncus, lacus dolor sodales diam, aliquet fermentum lectus enim id lacus.</p>
 							</div>
-
+							
 						</div>
 					</div>
-
+					
 					<div class="col-md-6">
 						<div class="heading1">
-							<h2>
-								<i>TOP </i>BRANDS
-							</h2>
+							<h2><i>TOP </i>BRANDS</h2>
 							<span>BRAND FOR EVERY STYLE.</span>
 						</div>
-
+						
 						<div class="row">
 							<div class="col-md-4">
 								<div class="shop-top-brand">
-									<a href="#" title=""><img
-										src="<%=request.getContextPath()%>/resources/images/shop-brands1.jpg"
-										alt="" /> <!--<img src="http://placehold.it/170x97" alt="" />-->
-									</a>
-
+									<a href="#" title=""><img src="<%=request.getContextPath()%>/resources/images/shop-brands1.jpg" alt="" /><!--<img src="http://placehold.it/170x97" alt="" />--> </a>
+									
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="shop-top-brand">
-									<a href="#" title=""><img
-										src="<%=request.getContextPath()%>/resources/images/shop-brands2.jpg"
-										alt="" /> <!--<img src="http://placehold.it/170x97" alt="" />-->
-									</a>
+									<a href="#" title=""><img src="<%=request.getContextPath()%>/resources/images/shop-brands2.jpg" alt="" /><!--<img src="http://placehold.it/170x97" alt="" />--> </a>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="shop-top-brand">
-									<a href="#" title=""><img
-										src="<%=request.getContextPath()%>/resources/images/shop-brands3.jpg"
-										alt="" /> <!--<img src="http://placehold.it/170x97" alt="" />-->
-									</a>
+									<a href="#" title=""><img src="<%=request.getContextPath()%>/resources/images/shop-brands3.jpg" alt="" /><!--<img src="http://placehold.it/170x97" alt="" />--> </a>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="shop-top-brand">
-									<a href="#" title=""><img
-										src="<%=request.getContextPath()%>/resources/images/shop-brands4.jpg"
-										alt="" /> <!--<img src="http://placehold.it/170x97" alt="" />-->
-									</a>
+									<a href="#" title=""><img src="<%=request.getContextPath()%>/resources/images/shop-brands4.jpg" alt="" /><!--<img src="http://placehold.it/170x97" alt="" />--> </a>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="shop-top-brand">
-									<a href="#" title=""><img
-										src="<%=request.getContextPath()%>/resources/images/shop-brands5.jpg"
-										alt="" /> <!--<img src="http://placehold.it/170x97" alt="" />-->
-									</a>
+									<a href="#" title=""><img src="<%=request.getContextPath()%>/resources/images/shop-brands5.jpg" alt="" /><!--<img src="http://placehold.it/170x97" alt="" />--> </a>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="shop-top-brand">
-									<a href="#" title=""><img
-										src="<%=request.getContextPath()%>/resources/images/shop-brands5.jpg"
-										alt="" /> <!--<img src="http://placehold.it/170x97" alt="" />-->
-									</a>
+									<a href="#" title=""><img src="<%=request.getContextPath()%>/resources/images/shop-brands5.jpg" alt="" /><!--<img src="http://placehold.it/170x97" alt="" />--> </a>
 								</div>
 							</div>
-
+							
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+</section>
 		<footer class="block">
 			<div class="container">
 				<div class="row">
@@ -1296,10 +1241,10 @@
 								text ever.</p>
 							<ul>
 								<li><span><i class="fa fa-mobile"></i></span>
-									<p>Phone: + 98392039330</p>
+								<p>Phone: + 98392039330</p>
 									<p>Fax: + 98392039330</p></li>
 								<li><span><i class="fa fa-envelope-o"></i></span>
-									<p>Email: meinto@tolee.com</p>
+								<p>Email: meinto@tolee.com</p>
 									<p>Address: Excel Tower OPG Rpad</p></li>
 							</ul>
 						</div>
@@ -1310,10 +1255,9 @@
 							<h3>
 								<i>RECENT</i> PRODUCT
 							</h3>
-							<span> <!--<img src="http://placehold.it/145x256" alt="" /> -->
-								<img
-								src="<%=request.getContextPath()%>/resources/images/footer-product.jpg"
-								alt="" />
+							<span>
+							<!--<img src="http://placehold.it/145x256" alt="" /> -->
+							<img src="<%=request.getContextPath()%>/resources/images/footer-product.jpg" 	alt="" />
 							</span>
 							<h4>
 								<a href="#" title="">Best Offer Seller This Dress</a>
@@ -1351,84 +1295,90 @@
 						</h3>
 						<div class="footer-deal">
 							<div class="footer-deals">
-								<a href="#" title=""> <!--<img src="http://placehold.it/85x123" alt="" /> -->
-									<img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal.jpg"
-									alt="" /> <span>30% <i>Off</i></span></a> <a href="#" title="">
+								<a href="#" title="">
+									<!--<img src="http://placehold.it/85x123" alt="" /> -->
+									<img src="<%=request.getContextPath()%>/resources/images/footer-deal.jpg" alt="" />
+									<span>30% <i>Off</i></span></a> <a href="#" title="">
 									<!--<img
-									src="http://placehold.it/85x123" alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal2.jpg"
-									alt="" /> <span>30% <i>Off</i></span>
-								</a> <a href="#" title=""> <!--<img src="http://placehold.it/85x123"
-									alt="" />--> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal3.jpg"
-									alt="" /> <span>30% <i>Off</i></span>
-								</a> <a href="#" title=""> <!--<img
-									src="http://placehold.it/85x123" alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal4.jpg"
-									alt="" /> <span>30% <i>Off</i></span></a> <a href="#" title="">
+									src="http://placehold.it/85x123" alt="" /> -->
+									<img src="<%=request.getContextPath()%>/resources/images/footer-deal2.jpg" alt="" />
+									<span>30% <i>Off</i></span></a>
+								<a href="#" title=""><!--<img src="http://placehold.it/85x123"
+									alt="" />-->
+									<img src="<%=request.getContextPath()%>/resources/images/footer-deal3.jpg" alt="" />
+									<span>30% <i>Off</i></span></a> <a href="#" title="">
+									<!--<img
+									src="http://placehold.it/85x123" alt="" /> -->
+									<img src="<%=request.getContextPath()%>/resources/images/footer-deal4.jpg" alt="" />
+									<span>30% <i>Off</i></span></a>
+								<a href="#" title="">
 									<!--<img src="http://placehold.it/85x123"
-									alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal5.jpg"
-									alt="" /> <span>30% <i>Off</i></span>
-								</a> <a href="#" title=""> <!--<img
-									src="http://placehold.it/85x123" alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal6.jpg"
-									alt="" /> <span>30% <i>Off</i></span></a>
+									alt="" /> -->
+									<img src="<%=request.getContextPath()%>/resources/images/footer-deal5.jpg" alt="" />
+									<span>30% <i>Off</i></span></a> 
+									<a href="#" title="">
+									<!--<img
+									src="http://placehold.it/85x123" alt="" /> -->
+									<img src="<%=request.getContextPath()%>/resources/images/footer-deal6.jpg" alt="" />
+									<span>30% <i>Off</i></span></a>
 							</div>
 
 							<div class="footer-deals">
-								<a href="#" title=""> <!--<img src="http://placehold.it/85x123" alt="" /> -->
-									<img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal.jpg"
-									alt="" /> <span>30% <i>Off</i></span></a> <a href="#" title="">
-									<!--<img
-																src="http://placehold.it/85x123" alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal2.jpg"
-									alt="" /> <span>30% <i>Off</i></span>
-								</a> <a href="#" title=""> <!--<img src="http://placehold.it/85x123"
-																alt="" />--> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal3.jpg"
-									alt="" /> <span>30% <i>Off</i></span>
-								</a> <a href="#" title=""> <!--<img
-																src="http://placehold.it/85x123" alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal4.jpg"
-									alt="" /> <span>30% <i>Off</i></span></a> <a href="#" title="">
-									<!--<img src="http://placehold.it/85x123"
-																alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal5.jpg"
-									alt="" /> <span>30% <i>Off</i></span>
-								</a> <a href="#" title=""> <!--<img
-																src="http://placehold.it/85x123" alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal6.jpg"
-									alt="" /> <span>30% <i>Off</i></span></a>
+															<a href="#" title="">
+																<!--<img src="http://placehold.it/85x123" alt="" /> -->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal.jpg" alt="" />
+																<span>30% <i>Off</i></span></a> <a href="#" title="">
+																<!--<img
+																src="http://placehold.it/85x123" alt="" /> -->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal2.jpg" alt="" />
+																<span>30% <i>Off</i></span></a>
+															<a href="#" title=""><!--<img src="http://placehold.it/85x123"
+																alt="" />-->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal3.jpg" alt="" />
+																<span>30% <i>Off</i></span></a> <a href="#" title="">
+																<!--<img
+																src="http://placehold.it/85x123" alt="" /> -->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal4.jpg" alt="" />
+																<span>30% <i>Off</i></span></a>
+															<a href="#" title="">
+																<!--<img src="http://placehold.it/85x123"
+																alt="" /> -->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal5.jpg" alt="" />
+																<span>30% <i>Off</i></span></a> 
+																<a href="#" title="">
+																<!--<img
+																src="http://placehold.it/85x123" alt="" /> -->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal6.jpg" alt="" />
+																<span>30% <i>Off</i></span></a>
 							</div>
 
 							<div class="footer-deals">
-								<a href="#" title=""> <!--<img src="http://placehold.it/85x123" alt="" /> -->
-									<img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal.jpg"
-									alt="" /> <span>30% <i>Off</i></span></a> <a href="#" title="">
-									<!--<img
-																src="http://placehold.it/85x123" alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal2.jpg"
-									alt="" /> <span>30% <i>Off</i></span>
-								</a> <a href="#" title=""> <!--<img src="http://placehold.it/85x123"
-																alt="" />--> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal3.jpg"
-									alt="" /> <span>30% <i>Off</i></span>
-								</a> <a href="#" title=""> <!--<img
-																src="http://placehold.it/85x123" alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal4.jpg"
-									alt="" /> <span>30% <i>Off</i></span></a> <a href="#" title="">
-									<!--<img src="http://placehold.it/85x123"
-																alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal5.jpg"
-									alt="" /> <span>30% <i>Off</i></span>
-								</a> <a href="#" title=""> <!--<img
-																src="http://placehold.it/85x123" alt="" /> --> <img
-									src="<%=request.getContextPath()%>/resources/images/footer-deal6.jpg"
-									alt="" /> <span>30% <i>Off</i></span></a>
+															<a href="#" title="">
+																<!--<img src="http://placehold.it/85x123" alt="" /> -->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal.jpg" alt="" />
+																<span>30% <i>Off</i></span></a> <a href="#" title="">
+																<!--<img
+																src="http://placehold.it/85x123" alt="" /> -->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal2.jpg" alt="" />
+																<span>30% <i>Off</i></span></a>
+															<a href="#" title=""><!--<img src="http://placehold.it/85x123"
+																alt="" />-->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal3.jpg" alt="" />
+																<span>30% <i>Off</i></span></a> <a href="#" title="">
+																<!--<img
+																src="http://placehold.it/85x123" alt="" /> -->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal4.jpg" alt="" />
+																<span>30% <i>Off</i></span></a>
+															<a href="#" title="">
+																<!--<img src="http://placehold.it/85x123"
+																alt="" /> -->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal5.jpg" alt="" />
+																<span>30% <i>Off</i></span></a> 
+																<a href="#" title="">
+																<!--<img
+																src="http://placehold.it/85x123" alt="" /> -->
+																<img src="<%=request.getContextPath()%>/resources/images/footer-deal6.jpg" alt="" />
+																<span>30% <i>Off</i></span></a>
 							</div>
 						</div>
 					</div>
@@ -1478,27 +1428,35 @@
 
 	<!-- Script -->
 
-	<!-- <script src="http://codepen.io/assets/libs/fullpage/jquery.js"/> -->
-	<script type="text/javascript" src="js/script.js"/>
+	<!-- <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script> -->
+	<script type="text/javascript"
+		src="<c:url value="/resources/js/script.js"/>"></script>
 	<!-- Common -->
-	<script src="js/myindex.js"/>
+	<script src="<%=request.getContextPath()%>/resources/js/myindex.js"></script>
 	<!-- Jquery -->
-	<script type="text/javascript" src="js/bootstrap.min.js"/>
+	<script type="text/javascript"
+		src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
 	<!-- Bootstrap -->
-	<script type="text/javascript" 	src="js/modernizr.js"></script>
-	
-	<script type="text/javascript" 	src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript"
+		src="<%=request.getContextPath()%>/resources/js/modernizr.js"></script>
+	<!-- modernizr -->
+	<script type="text/javascript"
+		src="<%=request.getContextPath()%>/resources/js/owl.carousel.min.js"></script>
+	<!-- Owl Carousal -->
+	<script type="text/javascript"
+		src="<%=request.getContextPath()%>/resources/js/onscreen.js"></script>
+	<!-- On Screen -->
+	<script type="text/javascript"
+		src="<%=request.getContextPath()%>/resources/js/switcher.js"></script>
+	<!-- Style Switcher -->
 
-	<script type="text/javascript" 		src="js/onscreen.js"></script>
-
-	<script type="text/javascript"		src="js/switcher.js"></script>
-	
-
-	<script type="text/javascript"		src="js/daterangepicker.js"></script>
-	
-	<script type="text/javascript"		src="js/ion.rangeSlider.min.js"></script>
-	
-	<script type="text/javascript"		src="js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript"
+		src="<%=request.getContextPath()%>/resources/js/daterangepicker.js"></script>
+	<!-- Date Range Picker -->
+	<script type="text/javascript"
+		src="<%=request.getContextPath()%>/resources/js/ion.rangeSlider.min.js"></script>
+	<!-- Range Slider -->
+	<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/jquery.themepunch.plugins.min.js"></script>
 
 	<!-- Range Slider -->
 	<script>
@@ -1525,6 +1483,23 @@
 		src="<c:url value="/resources/js/jquery.themepunch.plugins.min.js"/>"></script>
 	<script type="text/javascript"
 		src="<c:url value="/resources/js/jquery.themepunch.revolution.min.js"/>"></script>
+
+	<script type="text/javascript">
+		var revapi;
+		jQuery(document).ready(function() {
+			revapi = jQuery('.tp-banner').revolution({
+				delay : 5000,
+				startwidth : 1170,
+				startheight : 533,
+				autoHeight : "off",
+				navigationType : "none",
+				hideThumbs : 10,
+				fullWidth : "on",
+				fullScreen : "off",
+				fullScreenOffsetContainer : ""
+			});
+		});
+	</script>
 
 	<script type="text/javascript">
 		var revapi;
