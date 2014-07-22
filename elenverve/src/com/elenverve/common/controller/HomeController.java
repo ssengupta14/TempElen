@@ -46,7 +46,7 @@ public class HomeController {
 		return "index";
 
 	}
-	@RequestMapping(value={ "/home8", "/welcome**" }, method = RequestMethod.GET)
+	@RequestMapping(value={ "/home", "/welcome**" }, method = RequestMethod.GET)
 	public String index2(ModelMap model,HttpServletRequest request) {
 		ProductParser parser = new ProductParser();
 		List<Product> prodList = parser.getProductList();
@@ -55,7 +55,7 @@ public class HomeController {
 		Home homeDpo = new Home();
 		model.addAttribute("homedpo", homeDpo);
 
-		return "index8";
+		return "home";
 
 	}
 
