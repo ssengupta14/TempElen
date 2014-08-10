@@ -27,4 +27,18 @@
 	<mvc:resources mapping="/products/**" location="/resources/theme/images/products/" /> 
 	<mvc:annotation-driven />
 	
+	<bean id="evUsersDAO" class="com.elenverve.dao.EVUsersDAO"></bean>
+	<bean id="rememberMeServices"
+          class="org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices">
+        <constructor-arg value="myAppKey"/>
+        <constructor-arg ref="evUsersDAO"/>
+        <constructor-arg ref="tokenRepository"/>
+        <property name="cookieName" value="remember-me"/>
+        <property name="tokenLength" value="32"/>
+        <property name="parameter" value="remember-me-parameter"/>
+    </bean>
+
+    <bean id="tokenRepository"
+          class="org.springframework.security.web.authentication.rememberme.InMemoryTokenRepositoryImpl">
+    </bean>
 </beans>

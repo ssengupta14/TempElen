@@ -272,17 +272,21 @@
 
 									<div id="modal" class="popupContainer" style="display: none;">
 										<header class="popupHeader">
-											<span class="header_title">Login</span> <span
-												class="modal_close"><i class="fa fa-times"></i></span>
+											<span class="header_title">Login</span> 
+											<span class="modal_close">
+												<i class="fa fa-times"/>
+											</span>
 										</header>
 
 										<section class="popupBody">
 											<!-- Social Login -->
 											<div class="social_login">
 												<div class="">
-													<a href="#" class="social_box fb"> <span class="icon"><i
-															class="fa fa-facebook"></i></span> <span class="icon_title">Connect
-															with Facebook</span>
+													<a href="#" class="social_box fb"> 
+														<span class="icon">
+															<i class="fa fa-facebook"></i>
+														</span> 
+														<span class="icon_title">Connect with Facebook</span>
 
 													</a> <a href="#" class="social_box google"> <span
 														class="icon"><i class="fa fa-google-plus"></i></span> <span
