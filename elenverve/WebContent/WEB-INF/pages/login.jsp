@@ -92,13 +92,16 @@
 					<input type="checkbox" name="_spring_security_remember_me" id="_spring_security_remember_me" /> 
 					<label for="_spring_security_remember_me">Don't ask for my password for two weeks</label>
 				</div>
-				<div style="clear: both;"></div>
-				<div class="one_half">
+				
+				<div class="action_btns">
+						<div class="one_half">
 							<a href="#" class="btn back_btn">
 								<i class="fa fa-angle-double-left"></i> Back
 							</a>
 						</div>
-				<button type="button">Login</button>
+						<div class="one_half last"><a href="#" class="btn btn_red" id="loginform">Login</a></div>
+					</div>
+				<!-- <button type="button">Login</button> -->
 			</form>
 
 			<a href="#" class="forgot_password">Forgot password?</a>

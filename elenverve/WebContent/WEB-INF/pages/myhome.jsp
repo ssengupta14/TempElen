@@ -73,6 +73,11 @@
 					$("#form form button").click(function() {
 						performLogin($("#form form"));
 					});
+					$("#form form #loginform").click(function() {
+						
+						performLogin($("#form form"));
+					});
+					
 					$("#form form input, #form form button").keypress(function(e) {
 						if (e.which == 13) {
 							performLogin($("#form form"));
