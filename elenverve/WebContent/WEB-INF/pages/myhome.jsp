@@ -6,7 +6,8 @@
 	<title>Home</title>
 	<link rel="stylesheet" href="<c:url value="/resources/css/jquery-ui-1.8.13.custom.css"/>"	type="text/css" />
 	<link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>"	type="text/css" />
-	
+	<link rel="stylesheet" href="<c:url value="/resources/css/mystyle.css"/>"	type="text/css" />
+	<link rel="stylesheet"	href="<c:url value="/resources/font-awesome-4.0.3/css/font-awesome.css"/>"	type="text/css" />
 	<script type="text/javascript" src="<c:url value="/resources/js/jquery-1.6.1.min.js"/>"></script>
 	<script type="text/javascript" src="<c:url value="/resources/js/jquery-ui-1.8.13.custom.min.js"/>"></script>
 	
@@ -16,6 +17,7 @@
 	
 	<script type="text/javascript">
 		function loadLinks() {
+			
 			var links = $("#links");
 			links.load(
 				'<c:url value="/links" />',
@@ -65,7 +67,8 @@
 				modal: true,
 				position: 'center',
 				resizable: false,
-				width: 500,
+				width: 400,
+				height: 400,
 				open: function() {
 					$("#form form button").click(function() {
 						performLogin($("#form form"));
@@ -90,6 +93,6 @@
 	<div id="links"></div>
 	
 	<!-- This is my login form, not displayed by default. Populated by jQuery & login.jsp -->
-	<div id="login" style="display: none;" title="Login Form"></div>
+	<div id="login" style="display: none;" title="Login"></div>
 </body>
 </html>

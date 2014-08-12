@@ -8,7 +8,6 @@
 <title>Index</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-</head>
 
 <link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Raleway:400,300,600,700,500|Noto+Sans:400,700|Ubuntu:300,400,500,700'
@@ -43,6 +42,9 @@
 <script type="text/javascript" src="<c:url value="/resources/js/jquery.leanModal.min.js"/>"></script>
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
 <!-- Jquery -->
+</head>
+
+
 
 </head>
 <body>
@@ -311,10 +313,22 @@
 											<!-- Username & Password Login form -->
 											<div class="user_login">
 												<form>
-													<label>Email / Username</label> <input type="text" /> <br />
+													<!--<label>Email / Username</label> 
+													 <input type="text" /> 
+													
+													<br />
 
-													<label>Password</label> <input type="password" /> <br />
-
+													<label>Password</label> 
+													<input type="password" /> <br />--> 
+													<div>
+														<label for="j_username">User:</label> 
+														<input type='text' id="j_username" name='j_username' />
+													</div>
+													<div style="clear: both;"></div>
+													<div>
+														<label for="j_password">Password:</label> 
+														<input type="password" id="j_password" name="j_password" />
+													</div>
 													<div class="checkbox">
 														<input id="remember" type="checkbox" /> <label
 															for="remember">Remember me on this computer</label>
@@ -326,7 +340,8 @@
 																class="fa fa-angle-double-left"></i> Back</a>
 														</div>
 														<div class="one_half last">
-															<a href="#" class="btn btn_red">Login</a>
+															<a href="#" class="btn btn_red" id="loginButton">Login</a>
+															<button type="button">Login</button>
 														</div>
 													</div>
 												</form>
@@ -334,7 +349,7 @@
 												<a href="#" class="forgot_password">Forgot password?</a>
 											</div>
 
-											<!-- Register Form -->
+											
 											<div class="user_register">
 												<form>
 													<label>Full Name</label> <input type="text" /> <br /> <label>Email
@@ -1554,6 +1569,11 @@
 				$(".header_title").text('Login');
 				return false;
 			});
+			$("form #loginButton").click(function(){
+				alert("hi");
+				performLogin("form");
+				
+			});
 
 			$("#shop-testimonial").owlCarousel({
 				autoPlay : 2000, //Set AutoPlay to 20 seconds
@@ -1614,7 +1634,7 @@
 				pagination : false,
 				transitionStyle : "goDown"
 			});
-
+			
 			var now = new Date();
 			var current_year = now.getFullYear();
 			var next_year = current_year + 1;
@@ -1657,6 +1677,32 @@
 			}
 
 		});
+		function performLogin(form) {
+			
+			form.find(".message").hide();
+			form.find(".error").hide();
+			alert("after");
+			/* $.post( '<c:url value="/login" />', function( data ) {
+  				$( ".result" ).html( data );
+			}); */
+
+
+			 $.post(
+				'<c:url value="/login" />', 
+				form.serialize(),
+				function (data, textStatus) {
+					alert("after");
+					if (data.status) {
+						
+						$("#login").dialog('close');
+						loadLinks();
+					} else {
+						var err = form.find(".error");
+						err.html("Login Failed [" + data.error + "]");
+						err.show();
+					}
+				}, "json"); 
+		}
 	</script>
 
 </body>

@@ -4,9 +4,8 @@
 <%@ page session="false" %>
 
 <!-- If not logged in, display login & ajax login links -->
-<security:authorize ifNotGranted="ROLE_USER">
-	
-	<p><a id="ajaxLogin" href="#">Ajax Login</a></p>
+<security:authorize ifNotGranted="ROLE_USER">	
+	<p><a id="ajaxLogin" href="#">Ajax Login</a></p>	
 </security:authorize>
 
 <!-- If logged in, display secure and logout link -->

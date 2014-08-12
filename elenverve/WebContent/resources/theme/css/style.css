@@ -11757,7 +11757,7 @@ footer-deal .owl-controls {
 a.btn {color:#666; text-align: center; text-decoration: none;}
 a.btn_red {color: #FFF;}
 
-.one_half {width:50%; display: block; float:left;}
+.one_half {width:50%; display: block; float:left; color:black;}
 .one_half.last {width:45%; margin-left:5%;}
 
 /* Popup Styles*/
@@ -11775,9 +11775,10 @@ a.btn_red {color: #FFF;}
 .social_login .fb .icon {background:#3B5998;}
 .social_login .google .icon {background:#DD4B39;}
 .social_login .icon_title {display:block; padding:5px 0; float:left; font-weight: bold; font-size: 16px; color:#777;}
+.social_login .popuptext {display:block; padding:5px 0; float:left; font-weight: bold; font-size: 16px; color:black;}
 .social_login .social_box:hover {background: #E4E4E2;}
 
-.centeredText {text-align: center; margin: 20px 0; clear: both; overflow: hidden; text-transform: uppercase;}
+.centeredText {text-align: center; margin: 20px 0; clear: both; overflow: hidden;}
 
 .action_btns {clear:both; overflow: hidden;}
 .action_btns a {display: block;}

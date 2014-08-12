@@ -50,6 +50,17 @@ public class HomeController {
 		return "myhome";
 	}
 	
+	@RequestMapping(value={ "/evhome", "/welcome**" }, method = RequestMethod.GET)
+	public String evhome(ModelMap model,HttpServletRequest request) {
+		ProductParser parser = new ProductParser();
+		List<Product> prodList = parser.getProductList();
+		model.addAttribute("prodList", prodList);
+
+		Home homeDpo = new Home();
+		model.addAttribute("homedpo", homeDpo);
+		return "evhome";
+	}
+	
 	@RequestMapping(value="/links", method=RequestMethod.GET)
 	public void links() {}
 	

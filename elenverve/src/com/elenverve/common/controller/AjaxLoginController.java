@@ -41,8 +41,8 @@ public class AjaxLoginController {
 			@RequestParam("j_password") String password,
 			HttpServletRequest request, HttpServletResponse response) 
 	{
-		UsernamePasswordAuthenticationToken token = 
-			new UsernamePasswordAuthenticationToken(username, password);
+		UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(username, password);
+		System.out.println("hi");
 		try {
 			Authentication auth = authenticationManager.authenticate(token);
 			SecurityContextHolder.getContext().setAuthentication(auth);
